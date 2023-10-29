@@ -1,0 +1,55 @@
+.container {
+    border: 1px solid brown;
+    padding: 10px;
+    width: 330px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+[class ^= "smiley-"] {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.smiley-green {
+    border: 5px solid #92c563;
+    position: relative;
+  }
+
+.smiley-green ::before{
+    background: #a9db7a;
+}
+
+.smiley-green ::after{
+    background: white;
+}
+
+.smiley-red {
+    border: 5px solid #b51626;
+    position: relative;
+  }
+
+.smiley-red ::before{
+    background: #b51626;
+}
+
+.smiley-red ::after{
+    background: white;
+}
+
+
+.smiley-yellow {
+    border: 5px solid #eec600;
+    position: relative;
+  }
+
+.smiley-yellow ::before{
+    background: #eec600;
+}
+
+.smiley-yellow ::after{
+    background: white;
+}
