@@ -134,3 +134,26 @@ const accessControl = {
         return target[property];
       },  
 }
+
+//5. State Management
+//store stores the state of the comp globally
+
+function createStore(reducer){
+    let state = undefined;
+    const subscribers = [];
+
+    function getState() {
+        return state;
+    }
+
+    function dispatch(action){
+        state = reducer(state, action);
+        subscribers.forEach((subscriber) => subscriber());
+    }
+}
+const initialState = {
+    counter : 0,
+    user: null
+};
+
+export const state = {...initialState};
