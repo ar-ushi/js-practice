@@ -1,5 +1,37 @@
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .center-content{
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.counter-val{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.btn{
+    font-size: 1rem;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 10px 16px;
+}
+
+.btn-primary{
+    background-color: cyan;
+}
+
+.padding-bottom-1rem{
+    padding-bottom: 1rem;
+}
+
+input{
+    width: 5rem;
+    height: 2em;
+    font-size: 1rem;
 }

@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="./counter.css" type="text/css/">
+    <link rel="stylesheet" href="counter.css">
     <script type="text/javascript" src="counter.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="center-content">
-    <h2 id="counter-val">0</h2>
-    <div class="button-container">
-        <button (click)="incrementValue(value)">-</button>
-        <button (click)="decrementValue(value)">+</button>
+    <section class="center-content">
+    <div id="counter-val" class="counter-val padding-bottom-1rem">0</div>
+    <div class="padding-bottom-1rem">
+        <button onclick="updateValue(-1)" class="btn btn-primary" id="dec-btn">-</button>
+        <button onclick="updateValue(+1)" class="btn btn-primary" id="inc-btn">+</button>
     </div>
-    <div class="choose-value">
+    <div class="choose-value padding-bottom-1rem">
         <label for="changeBy"> Increment/Decrement by:</label>
             <input type="number" id="changeBy" value="1" min="1" max="10">
     </div>
-    <div class="button-container">
-        <button>Reset</button>
+    <div>
+        <button onclick="resetValue()" class="btn btn-primary">Reset</button>
     </div>
-</div>
+</section>
 </body>
 </html>
